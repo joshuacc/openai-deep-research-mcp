@@ -90,7 +90,6 @@ server.registerTool("openai_deep_research_create", {
         const response = await client.responses.create({
             model,
             input: inputMessages,
-            reasoning: { summary: "auto" },
             tools,
             background: true,
         });

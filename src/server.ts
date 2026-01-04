@@ -115,7 +115,6 @@ server.registerTool(
       const response = await client.responses.create({
         model,
         input: inputMessages,
-        reasoning: { summary: "auto" },
         tools,
         background: true,
       });
